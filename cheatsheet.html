@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./resources/css/google_fonts.css">
+    <link rel="stylesheet" href="./resources/css/cs_styles.css">
+    <title>aponus' cheatsheet</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Da cheatsheet</h1>
+        </header>
+        <div class="capitolo">
+            <div class="banner">
+                <h2>CSS</h2>
+            </div>
+            <article>
+                <h3>Flexbox</h3>
+                <div class="topic">
+                    <div class="codice">
+                        <code class="cod">div.container {<br>  display: flex;<br> }</code>
+                    </div>
+                    <div class="descrizione">
+                        <p>
+                            Any element can be a flex container. <br>
+                            Flex containers are helpful tools for creating websites
+                            that respond to changes in screen sizes.<br> 
+                            Child elements of flex containers will change size
+                            and location in response to the size and position of their parent container.<br>
+                            Parent container will remain block level, and no other elements will appear on the same line as it.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <h3>inline-flex</h3>
+                <section class="topic">
+                    <div class="codice">
+                        <code class="cod">&lt;div class='container'&gt;<br> &lt;div class='child'&gt;<br> &lt;h1&gt;1&lt;/h1&gt;<br>&lt;/div&gt;<br> &lt;div class='child'&gt;<br> &lt;h1&gt;2&lt;/h1&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code>
+                        <code class="cod">.container {<br> width: 200px;<br>}<br><br>.child {<br>  display: inline-flex;<br>  width: 150px;<br>  height: auto;<br>}</code>
+                    </div>
+                    <div class="descrizione">
+                        <p>
+                            When we change the value of the display property to <code class="var">inline-flex</code>,<br> the divs will display
+                            inline with each other if the page is wide enough.
+                        </p>
+                    </div>
+                </section>
+            </article>
+            <hr>
+            <article>
+                <h3>justify-content</h3>
+                <div class="topic">
+                    <div class="codice">
+                        <code class="cod">.container {<br> display: flex;<br> justify-content: flex-end;<br>}</code>
+                        <div class="variabili">
+                            <code class="var">flex-start</code>
+                            <code class="var">flex-end</code>
+                            <code class="var">center</code>
+                            <code class="var">space-around</code>
+                            <code class="var">space-between</code>
+                        </div>
+                    </div>
+                    <div class="descrizione">
+                        <p>
+                            To position the items from left to right, we use a property called <code class="var">justify-content</code>.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <h3>align-items</h3>
+                <div class="topic">
+                    <div class="codice">
+                        <code class="cod">.container {<br>  align-items: baseline;<br>}</code>
+                        <div class="variabili">
+                            <code class="var">flex-start</code>
+                            <code class="var">flex-end</code>
+                            <code class="var">center</code>
+                            <code class="var">baseline</code>
+                            <code class="var">stretch</code>
+                        </div>
+                    </div>
+                    <div class="descrizione">
+                        <p>It is also possible to align flex items vertically within the container. <br></p>
+                        <p>The <code>align-items</code> property makes it possible to space flex items vertically.</p>
+                    </div>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <h3>flex-grow</h3>
+                <div class="topic">
+                    <div class="codice">
+                        <code class="cod">.container {<br>  display: flex;<br>}<br><br>.child {<br>  width: 100px;<br>  flex-grow: 1;<br>}</code>
+                    </div>
+                    <div class="descrizione">
+                        <p>
+                            if the parent container is larger than necessary then the flex items will not stretch by default.
+                        </p>
+                        <p>
+                            The <code class="var">flex-grow</code> property allows us to specify if items should grow to fill a container and also which items should grow proportionally more or less than others.<br>
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <h3>flex-shrink</h3>
+                <div class="topic">
+                    <div class="codice">
+                        <code class="cod">.container {<br>  display: flex;<br>}<br><br>.child {<br>  width: 100px;<br>  flex-shrink: 1;<br>}</code>
+                    </div>
+                    <div class="descrizione">
+                        <p>
+                            <code class="var">flex-shrink</code> property can be used to specify which elements will shrink and in what proportions.
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <hr>
+        </div>
+    </main>
+</body>
+
+</html>
