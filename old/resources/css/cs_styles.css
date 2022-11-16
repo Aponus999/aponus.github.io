@@ -1,0 +1,284 @@
+/* Text properties */
+
+h1, h2, h3, h4 {
+    font-family: Montserrat, sans-serif;
+    
+}
+
+h1 {
+    font-size: 34pt;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+}
+
+h2 {
+    font-size: 32pt;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+h3 {
+    font-size: 24pt;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h4 {
+    font-size: 18pt;
+    text-align: center;
+    vertical-align: middle;
+}
+
+hr {
+    margin: 50px 25px;
+    z-index: 10;
+}
+
+/* Sezioni principali */
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+header.banner {
+    display: flex;
+    flex-flow: column wrap;
+    position: sticky;
+    height: fit-content;
+    top: 0px;
+    width: 100%;
+    background-color: lightgreen;
+    justify-content: center;
+    align-items: center;
+    color: limegreen;
+    background-color: black;
+    margin: 0;
+    
+}
+
+.banner {
+    background-color: lightgreen;
+}
+
+#navbar {
+    list-style-type: none;
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar h3, a{
+    text-transform: uppercase;
+    color: limegreen;
+    line-height: 0.3rem;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    background-color: gainsboro;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: block;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.sezione {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.capitolo {
+    margin: 50px 0;
+    padding: 10px 0;
+    background-color: white;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    
+}
+
+.titolosezione {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: fit-content;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titolosezione h3 {
+    border-style: double solid;
+    background-color: lightgreen;
+    padding: 0 3px;
+}
+
+
+/* Sotto-sezioni */
+
+.topic {
+    width: 80%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    color: black;
+    text-align: left;
+    margin: auto 25px;
+    border-bottom: double;
+}
+
+.nota {
+    width: 80%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    color: black;
+    text-align: left;
+    margin: auto 25px;
+    border-bottom: double;
+}
+
+/* Sotto-sezioni */
+
+.codice {
+    max-width: 700px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 700px;
+    display: flex;
+    flex-flow: column wrap;   
+    margin: auto 25px;
+    
+}
+
+.variabili {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;   
+}
+
+.descrizione {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    flex-grow: 2;
+    height: auto;
+}
+
+
+/* Testi descrizioni e note */
+
+
+.descrizione p{
+    max-width: 700px;
+    text-align: center;
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    color: black;
+    margin: 10px 25px;
+}
+
+.descrizione ul, li{
+    text-align: left;
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    color: black;
+    margin: 10px 25px;
+}
+
+.nota p{
+    max-width: 700px;
+    flex-grow: 2;
+    height: auto;
+    line-height: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    color: black;
+    text-align: center;
+    margin: 10px 25px;
+}
+
+
+/* Codice e Variabili */
+
+code.cod { 
+    min-width: max-content;
+    line-height: 2rem;
+    border: 3px solid limegreen;
+    background-color: black;
+    font-family: 'PT Mono', monospace;
+    font-size: 13pt;
+    color: limegreen;
+    text-align: left;
+    padding: 5px 30px;
+    white-space: pre;
+    margin: 10px 10px; 
+}
+
+code.var {
+    width: auto;
+    line-height: 2rem;
+    border: 1px solid black;
+    background-color: lightgrey;
+    font-family: 'PT Mono', monospace;
+    font-size: 13pt;
+    color: black;
+    text-align: left;
+    white-space: pre;
+    padding: 5px 5px;
+    margin: 10px 10px; 
+}
+
+code.cod2 { 
+    min-width: max-content;
+    line-height: 2rem;
+    border: 3px solid limegreen;
+    background-color: black;
+    font-family: 'PT Mono', monospace;
+    font-size: 13pt;
+    color: limegreen;
+    text-align: left;
+    padding: 5px 30px;
+    white-space: pre;
+    margin: 10px 10px; 
+}
+
+
+
+
+
+
+
